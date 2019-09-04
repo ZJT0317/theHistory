@@ -1,0 +1,523 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+a{
+	 text-decoration:none;
+	 color:#338de6;
+}
+.events_all a:hover,
+.date_word_pre a:hover{
+	text-decoration: underline;
+	color:#338de6;
+}
+ul,li{
+	list-style:none;
+}
+.wrapper{
+	height:629px;
+	background-color:#e8ebed;
+}
+.twoLineWrap{
+	width:980px;
+	padding:20px  0;
+	height:629px;
+	margin:auto;
+}
+.canlander{
+	box-sizing: border-box;
+	padding:25px 54px 56px;
+	width:682px;
+	height:589px;
+	background-color: #fff;
+	float:left;
+	box-shadow: 0 0 3px #ccc;
+}
+.canlander .month{
+	margin:0 194px;
+	width:186px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+}
+.month a{
+	display:inline-block;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	color:#9a9b9c;
+	border: 1px solid #d1d1d1;
+}
+.month a:hover{
+	border-color: #96c1ec;
+    color: #4091e1;
+    box-shadow: 0 0 5px #96c1ec;
+}
+.pre{
+	float:left;
+}
+.next{
+	float:right;
+}
+a.disable{
+	color: #d1d1d1;
+	border-color: #eee;
+	cursor: default;
+}
+a.disable:hover{
+	border-color: #eee;
+	color: #d1d1d1;
+	box-shadow: 0 0 5px transparent;
+}
+
+.month .date-data{
+	font-size:18px;
+	dispaly:inline-bolck;
+}
+.dateDisplay{
+	height: 50px;
+	width:574px;
+	float:left;
+}
+.dateDisplay li{
+	float:left;
+	width:80px;
+	height:50px;
+	margin-right:2px;
+    font-size: 14px;
+	line-height:50px;
+    color: #ccc;
+    text-align: center;
+}
+.canlander-box{
+	float:left;
+	width:574px;
+	height:408px;
+}
+.canlander-box li{
+	display:inline-block;
+	float:left;
+	position:relative;
+	overflow:hidden;
+	width:80px;
+	height:80px;
+	margin-right:2px;
+	margin-bottom:2px;
+	cursor:pointer;
+	color:#c5c5c5;
+	line-height:80px;
+	text-align:center;
+	font-size:26px;
+	background-color:#eee;
+}
+li.disabled{
+	cursor:default;
+}
+.line5 .shadow_one,
+.line6 .shadow_one{
+	position:absolute;
+	top:0;
+	left:0;
+	box-sizing:border-box;
+	width:80px;
+	height:80px;
+	border:5px solid #000;
+	opacity:0;
+}
+#on .shadow_one{
+	opacity: 1;
+	border-color: #1997ef;
+	background: transparent;
+}
+.line6 .shadow_one{
+	height:66px;
+}
+li.tomonth{
+	color:#fff;
+	opacity:1;
+}
+.line5 img{
+	display:inline-block;
+	width:80px;
+	filter: brightness(70%);
+}
+.line6 img{
+	display:inline-block;
+	width:80px;
+	filter: brightness(70%);
+}
+li.line6{
+	height:66px;
+	line-height:66px;
+	text-align:center;
+	font-size:26px;
+	background-color:#eee;
+}
+.line5 .img_day{
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:inline-block;
+	width:80px;
+	height:80px;
+	line-height:80px;
+	opacity:1;
+	font-size:26px;
+	text-align:center;
+	color:#fff;
+}
+.line6 .img_day{
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:inline-block;
+	width:80px;
+	height:66px;
+	line-height:66px;
+	opacity:1;
+	font-size:26px;
+	text-align:center;
+	color:#fff;
+}
+.line5 .shadow,
+.line6 .shadow{
+	    position: absolute;
+	    overflow: hidden;
+	    top: 0;
+	    left: 0;
+	    margin: 15px 10px;
+	    width: 60px;
+	    height: 50px;
+		font-size:12px;
+		text-align:left;
+	    line-height: 17px;
+		opacity:0;
+}
+.line6 .shadow{
+	    margin-top: 7px;
+	    margin-bottom: 5px;
+	    height: 54px;
+	    line-height: 18px;
+}
+.shadow_cur,
+.shadow_thislast{
+	position:absolute;
+	top:0;
+	left:0;
+	height:80px;
+	width:80px;
+}
+.line6 .shadow_cur,
+.line6 .shadow_thislast{
+	height:66px;
+}
+
+#on:hover .shadow{
+	opacity:0;
+	transition:0s;
+}
+#on .img_day{
+	opacity:0;
+	transition:0s;
+}
+#on img{
+	filter: brightness(100%);
+}
+.tomonth:hover .shadow{
+	opacity:1;
+	color:#fff;
+	transition: 0.4s;
+}
+.tomonth:hover .img_day{
+	background-color:#333;
+	opacity:0.7;
+	color:transparent;
+	transition: 0.4s;
+}
+.tomonth:hover img{
+	opacity:1;
+	transition: 0.4s;
+}
+.canlander-overflow li{
+	height: 66px;
+}
+.theDayOfhy{
+	float:left;
+	height:589px;
+	width:298px;
+}
+.date_da,
+.date_list{
+	text-align:center;
+	color:#fff;
+}
+.date_list{
+	font-weight: 700;
+	weight:298px;
+	height:42px;
+	font-size:18px;
+	line-height:42px;
+	background-color:#458fd8;
+}
+.date_da{
+	weight:298px;
+	height:125px;
+	font-size:48px;
+	background-color:#4e98e1;
+	line-height:125px;
+}
+.date_fe{
+	width:282px;
+	height:20px;
+	padding:0 8px 10px;
+	text-align:right;
+	color:#fff;
+	background-color:#4e98e1;
+}
+.date_events{
+	width:227px;
+	height:367px;
+	padding:25px 35px 0px;
+	margin-left:1px;
+	background-color:#f2f6fa;
+}
+.date_word_pre{
+	width:227px;
+	font-size:16px;
+	max-height: 48px;
+	line-height: 1.5;
+	font-weight: 700;
+	overflow:hidden;
+}
+.date_word_img{
+	display:inline-block;
+	width:220px;
+	height:132px;
+	margin:10px 3.5px;
+}
+.date_word{
+	width:227px;
+	line-height: 21px;
+	font-size:12.5px;
+	overflow:hidden;
+}
+.wrapper2{
+	/* max-height:1983px; */
+	background-color:#e8ebed;
+}
+.wrapper2 .events{
+	box-sizing: border-box;
+	padding:42.5px 0 42.5px 130px;
+	/* max-height:1983px; */
+	width:980px;
+	margin:auto;
+	background-color:#fff;
+	box-shadow: 0 0 3px #ccc;
+}
+.wrapper2 .event{
+	width:850px;
+	/* max-height:1898px; */
+}
+.event .title{
+    padding-left:45px;
+    width:320px;
+    height:45px;
+    line-height:45px;
+    font-size:20px;
+	margin-bottom:20px;
+    color:#666;
+    background:#f5f5f5;
+}
+.events_all{
+    margin:5px 0 20px 148px;
+    padding-top:40px;
+    width:550px;
+}
+dd:first-child {
+    margin-top: -55px;
+    padding-top: 55px;
+}
+dd:first-child .icon,
+dd:first-child .event_year{
+    top:40px;
+}
+.event-wrapper{
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    border-top: 1px solid #e1e3e6;
+}
+.event_head{
+	    position: relative;
+		line-height: 25px;
+		font-size: 16px;
+	    top: -13px;
+	    margin-left: 35px;
+	    padding-left: 5px;
+	    background: #fff;
+}
+.events_all dd{
+	position:relative;
+	width:550px;
+	padding-bottom:45px;
+	border-left: 1px solid #e1e3e6;
+}
+dd:last-child{
+	border-left: 1px solid #fff;
+}
+.icon {
+    position:absolute;
+    left:-18px;
+    top:-15px;
+    border:5px solid #fff;
+    width:25px;
+    height:25px;
+    border-radius:8px;
+    text-align:center;
+    background:#e5e5e5;
+}
+.draw{
+	display:inline-block;
+	padding:4px;
+    height:17px;
+	width:17px;
+	filter: brightness(90%);
+}
+.event_year{
+	position:absolute;
+	left:-148px;
+	top: -13px;
+	width: 120px;
+	height: 25px;
+	line-height: 25px;
+	color: #333;
+	font-size: 20px;
+	text-align: right;
+}
+.event_story{
+	    margin: -6px 0 0 40px;
+	    font-size: 14px;
+	    color: #999;
+		line-height: 1.5;
+}
+.character{
+	font-size:16px;
+}
+.events_all dd::after{
+	content:"";
+	clear:both;
+	overflow:hidden;
+}
+.title_date{
+	color:#333;
+	font-weight:700;
+}
+.last_wrap{
+	padding:30px 0;
+	height:68px;
+	background-color:#e8ebed;
+}
+.last_wrapper{
+	width:780px;
+	height:68px;
+	margin:auto;
+	
+}
+.last_wrapper p{
+	margin:5px 0;
+	height:18px;
+	font-size:12px;
+	line-heighth:18px;
+	text-align:center;
+}
+.last_wrapper a{
+	color:#338de6; 
+}
+ .last_wrapper a:hover{
+	text-decoration: underline;
+}
+.query3{
+	padding:5px 0 0 0 ;
+}
+.query3  i{
+	display: inline-block;
+    width: 14px;
+    height: 16px;
+    margin-right: 6px;
+    background: url(https://bkssl.bdimg.com/static/wiki-common/widget/component/footer/img/icon-police_d8a40a4.png) 0 0 no-repeat;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+.date_share{
+	position:fixed;
+	top:40%;
+	right:0;
+	width:45px;
+	height:200px;
+	background-color:#fff;
+}
+.share{
+	width:45px;
+	height:42px;
+	font-size:14px;
+	line-height:42px;
+	background-color:#6fb6fd;
+	color:#fff;
+	text-align:center;
+}
+.sanjiao{
+	width: 0;
+	height: 0;
+	margin: 0 auto;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #6fb6fd transparent transparent;
+}
+.pic1,
+.pic2,
+.pic3,
+.pic4{
+    margin: 10px 10px 2px;
+	height: 25px;
+	width: 25px;
+}
+.pic1{
+	background-image:url("img4.jpg");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
+.pic2{
+	background-image:url("img3.jpg");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
+.pic3{
+	background-image:url("img5.jpg");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
+.pic4{
+	background-image:url("img1.jpg");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
+.pic1:hover{
+	background-image:url("img2.jpg");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
+.pic2:hover{
+	background-image:url("img8.jpg");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
+.pic3:hover{
+	background-image:url("img6.jpg");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
+.pic4:hover{
+	background-image:url("img7.jpg");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
